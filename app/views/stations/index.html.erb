@@ -3,7 +3,8 @@
     <div class="section-title">
       This is a title!
     </div>  
-    <%= link_to "View Bikes", "bikes" %>
+      <%= link_to "View Bikes", "bikes", style: 'color:blue;'%>
+    </div>
     <div class="flexbox vertical stretch">
       <% if @stations.present? %>
         <%= render(partial: "stations/row", collection: @stations, as: :station) %>

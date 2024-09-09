@@ -3,7 +3,7 @@
     <div class="section-title">
       Bikes!
     </div>  
-    <%= link_to "View Stations", root_path %>
+    <%= link_to "View Stations", root_path, style: 'color:blue;' %>
     <div class="flexbox vertical stretch">
       <% if @bikes.present? %>
         <%= render(partial: "bikes/row", collection: @bikes, as: :bike) %>
